@@ -97,7 +97,7 @@ Start a new session, then type `/mahakarya` or just ask:
 **Companion skills.** Mahakarya is designed to sit on top of two other skills:
 
 - **impeccable**, for design craft and verification: [github.com/pbakaus/impeccable](https://github.com/pbakaus/impeccable)
-- **hallmark**, for the design floor and the `sloplint` checker
+- **hallmark**, for the design floor and the `sloplint` checker: [github.com/nutlope/hallmark](https://github.com/nutlope/hallmark)
 
 Mahakarya still works without them. Its own methods still apply: beat sheet, objection ladder, copy deck and `copylint`. The verification steps that come from Hallmark and Impeccable are skipped.
 
