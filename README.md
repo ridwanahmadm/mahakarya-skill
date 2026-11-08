@@ -1,86 +1,86 @@
 # Mahakarya
 
-**Skill AI untuk merombak website supaya terlihat seperti karya studio kelas dunia, tanpa menjiplak dan tanpa mengarang fakta.**
+**An AI agent skill for website revamps that look like the work of a world-class studio, without copying anyone and without inventing facts.**
 
-> English summary: Mahakarya is an agent skill for website revamps. You show it a site you admire; it borrows that site's rhythm, craft level and motion, then rebuilds the page with your client's own brand, facts, photos and words. It never copies the reference and never invents numbers, testimonials or logos. Works best with Claude Code; the method files can be used by any AI agent.
+*Mahakarya* is Indonesian for "masterpiece".
 
 ---
 
-## Apa itu Mahakarya?
+## What is Mahakarya?
 
-Bayangkan Anda punya website perusahaan yang "kurang meyakinkan", lalu Anda melihat website lain yang sangat Anda kagumi. Mahakarya membantu AI mengerjakan revamp dengan cara seorang direktur desain:
+Say you have a company website that doesn't inspire confidence, and you've found another site you really admire. Mahakarya guides your AI agent through the revamp the way a design director would:
 
-1. **Mempelajari situs acuan.** Yang diambil ritmenya, tingkat kerapiannya, dan gaya geraknya. Teks, logo, foto, dan tata letak persisnya tidak diambil.
-2. **Mengunci identitas klien.** Warna, huruf, dan logo yang sudah ditetapkan tidak berubah.
-3. **Mengisi halaman dengan fakta klien sendiri:** data dari CMS, dokumen klien, atau jawaban Anda.
-4. **Menulis copy seperti orang yang bicara langsung kepada pembaca**, bukan seperti brosur.
+1. **It studies the reference site.** It takes the rhythm, the level of craft and the motion. It does not take the text, logos, photos or exact layout.
+2. **It locks the client's identity.** Pinned colors, typefaces and logo never change.
+3. **It fills the page with the client's own facts:** CMS data, the client's documents, or answers from you.
+4. **It writes copy that talks to the reader directly.** It should read like a person across the table, not like a brochure.
 
-Ujiannya sederhana: **orang asing yang membuka halaman itu percaya dalam 10 detik bahwa ada perusahaan serius di baliknya, dan tahu satu hal yang harus ia lakukan berikutnya.**
+The bar is simple. Within 10 seconds of landing on the page, a stranger should believe a serious company is behind it and know the one thing to do next.
 
-## Paling cocok untuk
+## Best for
 
-- Revamp website perusahaan atau brand yang dibaca **investor, pembeli properti, mitra, atau klien bernilai besar**
-- Bisnis yang hidup dari kepercayaan: properti, developer, investasi, jasa profesional, B2B, hospitality, pendidikan
-- Permintaan **"buat seperti website ini"**, dari URL, rekaman layar, atau screenshot
-- **Keluarga brand**: induk dan anak usaha yang harus terasa satu keluarga tetapi tetap mudah dibedakan
-- **Menulis atau mengaudit copy website**, karena metode copy dan `copylint` bisa dipakai sendiri
+- Revamping company or brand websites read by **investors, property buyers, partners, or high-value clients**
+- Trust-driven businesses such as real estate, developers, investment, professional services, B2B, hospitality and education
+- **"Make it like this site"** requests, from a URL, a screen recording or screenshots
+- **Brand families**, where a parent company and its sub-brands should feel related but stay easy to tell apart
+- **Writing or auditing website copy**. The copy method and `copylint` work on their own.
 
-## Kurang cocok untuk
+## Not a good fit for
 
-- Dashboard, aplikasi, atau layar admin
-- Perubahan kecil, misalnya ganti warna atau satu tombol
-- Website yang belum punya materi nyata. Mahakarya menolak mengarang angka, testimoni, atau logo klien, jadi hasilnya sebaik foto dan fakta yang tersedia.
+- Dashboards, apps or admin screens
+- Small tweaks, like changing a color or a single button
+- Sites with no real material yet. Mahakarya will not make up numbers, testimonials or client logos, so the result is only as good as the photos and facts you have.
 
-## Enam prinsipnya
+## The six laws
 
-| Prinsip | Artinya dalam praktik |
+| Law | In practice |
 |---|---|
-| **Adaptasi, jangan jiplak** | Ambil struktur dan iramanya, bukan teks, logo, foto, atau ukuran persisnya |
-| **Identitas dikunci, suasana bebas** | Warna, huruf, dan logo tetap. Kanvas, komposisi, dan gerak boleh berubah |
-| **Setiap klaim punya sumber** | Angka datang dari data. Yang belum pasti tampil sebagai placeholder yang jelas. Halaman investasi tidak pernah menampilkan janji imbal hasil |
-| **Satu ide per layar** | Setiap layar menjawab satu pertanyaan pembaca. Setiap halaman punya satu momen khas |
-| **Kata adalah bahan desain pertama** | Copy ditulis sebelum desain dibuat, dari pertanyaan pembaca sendiri |
-| **Gerak menjelaskan, bukan menghias** | Animasi saat menggulir harus menunjukkan urutan atau hubungan. Halaman tetap utuh tanpa JavaScript dan saat reduced motion |
+| **Transpose, never copy** | Take the structure and pacing, never the text, logos, photos or exact measurements |
+| **Identity is locked, the world is free** | Colors, type and logo stay. Canvas, composition and motion can change |
+| **Every claim has a source** | Numbers come from data. Anything unconfirmed shows as a visible placeholder. Investment pages never show return or yield promises |
+| **One idea per screen** | Each screen answers one reader question. Each page has one signature moment |
+| **Words are the first material** | Copy is written before the design, from the reader's own questions |
+| **Motion explains, never decorates** | Scroll effects show a sequence or relationship. The page still reads fully without JavaScript and with reduced motion |
 
-## Alur kerjanya
+## How it works
 
-1. **Pra-cek.** Membaca proyek: framework, token warna, huruf, data CMS. Mencatat mana fakta yang pasti, mana klaim perusahaan, dan mana yang belum diketahui.
-2. **Bertanya sekali saja**, bila perlu: siapa pembacanya, satu aksi yang diinginkan, materi apa yang ada, dan apa yang dikunci.
-3. **Diagnosis situs lama.** Lima detik di halaman lama: apa perusahaannya, apa yang dijual, apa langkah berikutnya. Apa yang gagal dicatat, apa yang berfungsi dipertahankan.
-4. **Membentuk halaman:**
-   - inventaris materi (nyata, gambar, belum ada)
-   - **tangga keberatan**: lima pertanyaan pembaca sebelum bertindak, misalnya "Ini aman nggak?" atau "Siapa yang ngurus setelah jadi?"
-   - **beat sheet**: setiap bagian situs acuan dipetakan ke pertanyaan pembaca dan materi nyata
-   - **copy deck**: setiap bagian ditulis sebagai pertanyaan, jawaban satu kalimat, bukti, dan aksi
-5. **Ringkasan keputusan (Picks block)**, supaya Anda bisa mengoreksi arah sebelum dibangun.
-6. **Membangun** di rute baru di samping halaman lama, jadi halaman lama tidak dihapus. Hero dibuat dulu, baru bagian lainnya.
-7. **Verifikasi:**
-   - pemeriksaan desain dengan sloplint (dari Hallmark)
-   - `copylint` untuk copy
-   - aksesibilitas dengan axe
-   - tidak ada scroll horizontal di desktop dan ponsel
-   - uji 10 detik
-8. **Serah terima:** catatan, daftar placeholder, dan tiga foto atau fakta yang paling akan meningkatkan halaman.
+1. **Pre-flight.** The agent reads the project: framework, color tokens, fonts, CMS data. It records what is confirmed, what the company only claims, and what is unknown.
+2. **Ask once, if needed.** Who the reader is, the one action the page should drive, what material exists, and what is pinned.
+3. **Diagnose the old site.** It runs a five-second test on the current page: who the company is, what it sells, and what to do next. It notes what fails and keeps what works.
+4. **Shape the page:**
+   - a material inventory, sorted into real, pictures and absent
+   - an **objection ladder**: the five questions readers ask before acting, such as "Is this safe?" or "Who manages it after it's built?"
+   - a **beat sheet** that maps each section of the reference to a reader question and to real material
+   - a **copy deck** that gives each section a question, a one-sentence answer, the proof and the action
+5. **Picks block.** A one-screen summary of every decision, so you can redirect before anything is built.
+6. **Build** on a new route next to the old page, so nothing is deleted. The hero comes first, then the rest of the page.
+7. **Verify:**
+   - design lint with Hallmark's `sloplint`
+   - copy lint with `copylint`
+   - accessibility with axe
+   - no horizontal scroll on desktop or phone
+   - the 10-second test
+8. **Hand-over:** notes, a list of placeholders, and the three photos or facts that would improve the page most.
 
-## Isi repositori
+## What's in the repo
 
 ```
 mahakarya/
-├── SKILL.md                    ← instruksi utama untuk agent
+├── SKILL.md                    ← main instructions for the agent
 ├── references/
-│   ├── beat-sheet.md           ← cara memetakan situs acuan ke materi klien
-│   ├── trust-ladder.md         ← tangga keberatan pembaca dan aturan placeholder
-│   ├── copy.md                 ← metode menulis copy (7 aturan, kata yang dilarang, uji)
-│   └── motion.md               ← resep gerak saat menggulir
+│   ├── beat-sheet.md           ← mapping a reference site to the client's material
+│   ├── trust-ladder.md         ← reader objection ladder and placeholder rules
+│   ├── copy.md                 ← copywriting method (7 rules, banned words, checks)
+│   └── motion.md               ← scroll-motion recipes
 └── scripts/
-    └── copylint.mjs            ← pemeriksa copy otomatis (Node.js)
+    └── copylint.mjs            ← automated copy checker (Node.js)
 ```
 
-## Instalasi
+## Installation
 
-### Claude Code (paling lengkap)
+### Claude Code (full experience)
 
-Mahakarya dibuat untuk Claude Code. Salin folder `mahakarya` ke folder skills:
+Mahakarya was built for Claude Code. Copy the `mahakarya` folder into your skills folder:
 
 ```bash
 git clone https://github.com/ridwanahmadm/mahakarya-skill.git
@@ -88,33 +88,34 @@ mkdir -p ~/.claude/skills
 cp -R mahakarya-skill/mahakarya ~/.claude/skills/
 ```
 
-Untuk satu proyek saja, salin ke `.claude/skills/` di dalam proyek itu.
+To use it in one project only, copy it to `.claude/skills/` inside that project instead.
 
-Mulai sesi baru, lalu pakai dengan mengetik `/mahakarya`, atau minta langsung:
+Start a new session, then type `/mahakarya` or just ask:
 
-> Revamp website saya di `src/app/page.tsx` seperti https://contoh-situs-acuan.com. Pembacanya calon investor.
+> Revamp my website at `src/app/page.tsx` in the style of https://example-reference.com. The readers are potential investors.
 
-**Skill pendamping.** Mahakarya dirancang di atas dua skill lain:
+**Companion skills.** Mahakarya is designed to sit on top of two other skills:
 
-- **impeccable**, untuk kualitas desain dan verifikasi: [github.com/pbakaus/impeccable](https://github.com/pbakaus/impeccable)
-- **hallmark**, untuk aturan dasar desain dan pemeriksa `sloplint`
+- **impeccable**, for design craft and verification: [github.com/pbakaus/impeccable](https://github.com/pbakaus/impeccable)
+- **hallmark**, for the design floor and the `sloplint` checker
 
-Tanpa keduanya, Mahakarya tetap jalan. Metodenya (beat sheet, tangga keberatan, copy deck, `copylint`) tetap dipakai, tetapi langkah verifikasi dari Hallmark dan Impeccable akan dilewati.
+Mahakarya still works without them. Its own methods still apply: beat sheet, objection ladder, copy deck and `copylint`. The verification steps that come from Hallmark and Impeccable are skipped.
 
-### Codex CLI, Gemini CLI, Cursor, Windsurf, Cline, dan agent lain
+### Codex CLI, Gemini CLI, Cursor, Windsurf, Cline and other agents
 
-Agent selain Claude Code tidak memuat skill secara otomatis, tetapi isinya cukup Markdown biasa yang bisa dibaca agent mana pun.
+Other agents don't load skills automatically. The skill is plain Markdown, though, so any agent can read it.
 
-**Cara 1: taruh di proyek, lalu rujuk dari file instruksi agent**
+**Option 1: add it to your project and point your agent's instruction file at it**
 
 ```bash
 git clone https://github.com/ridwanahmadm/mahakarya-skill.git
+mkdir -p .skills
 cp -R mahakarya-skill/mahakarya ./.skills/
 ```
 
-Lalu tambahkan baris ini ke file instruksi agent Anda:
+Then add the line below to your agent's instruction file:
 
-| Agent | File instruksi |
+| Agent | Instruction file |
 |---|---|
 | Codex CLI | `AGENTS.md` |
 | Gemini CLI | `GEMINI.md` |
@@ -124,36 +125,36 @@ Lalu tambahkan baris ini ke file instruksi agent Anda:
 | GitHub Copilot | `.github/copilot-instructions.md` |
 
 ```markdown
-Untuk tugas revamp atau redesign website, baca dan ikuti `.skills/mahakarya/SKILL.md`
-beserta file di `.skills/mahakarya/references/` sebelum mulai.
+For any website revamp or redesign task, read and follow `.skills/mahakarya/SKILL.md`
+and the files in `.skills/mahakarya/references/` before starting.
 ```
 
-**Cara 2: tanpa instalasi.** Untuk ChatGPT, Claude.ai, atau Gemini di web, unggah `SKILL.md` dan `references/copy.md` ke percakapan, lalu tulis: *"Ikuti metode di file ini untuk merombak website saya."* Alat `copylint` tidak bisa dijalankan di sini, tetapi aturan copy-nya tetap bisa diterapkan.
+**Option 2: no install.** In ChatGPT, Claude.ai or Gemini on the web, upload `SKILL.md` and `references/copy.md`, then say: *"Follow the method in these files to revamp my website."* You can't run `copylint` there, but the copy rules still apply.
 
-### Menjalankan copylint sendiri
+### Running copylint on its own
 
-Butuh Node.js 18 atau lebih baru:
+Requires Node.js 18 or newer:
 
 ```bash
 node mahakarya/scripts/copylint.mjs src/app/page.tsx --address anda
 ```
 
-- `--address anda` atau `--address kamu` memeriksa sapaan supaya konsisten.
-- `copylint` membaca teks yang tampil di file `.tsx`, `.ts`, `.jsx`, `.js`, `.md`, dan `.html`.
-- Yang ditandai:
-  - kata hype ("terbaik", "kelas dunia")
-  - kalimat ragu-ragu ("berupaya", "diharapkan dapat")
-  - bahasa birokratis ("merupakan", "melakukan pembelian")
-  - pola template ("bukan sekadar…")
-  - tombol yang kabur ("Selengkapnya")
-  - kalimat terlalu panjang
-  - em-dash, tanda seru, dan emoji
+- `--address` checks that one form of address is used throughout: `anda` (formal "you") or `kamu` (casual "you").
+- It reads the visible text in `.tsx`, `.ts`, `.jsx`, `.js`, `.md` and `.html` files.
+- It flags:
+  - hype words ("world-class", "best-in-class")
+  - hedges ("we strive to")
+  - stiff, bureaucratic phrasing
+  - template shapes ("not just X, but Y")
+  - vague buttons ("Learn more")
+  - overly long sentences
+  - em-dashes, exclamation marks and emoji
 
-## Catatan
+## Notes
 
-- **Contoh dan aturan copy berbahasa Indonesia.** Untuk bahasa lain, sesuaikan `references/copy.md` dan daftar kata di `scripts/copylint.mjs`.
-- **Halaman investasi tidak pernah menampilkan angka imbal hasil, yield, atau janji pendapatan pasif.** Ini disengaja, karena klaim seperti itu diatur regulator.
+- **The copy rules and word lists are written for Indonesian websites**, with some English hype words included. For other languages, adapt `references/copy.md` and the word lists in `scripts/copylint.mjs`.
+- **Investment pages never show return, yield or passive-income figures.** This is on purpose, because these are regulated claims in most countries.
 
-## Lisensi
+## License
 
-MIT. Bebas dipakai, diubah, dan dibagikan.
+MIT. Free to use, modify and share.
